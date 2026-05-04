@@ -1,6 +1,6 @@
 // src/components/GitHubUserSearch.jsx
 import { useState } from 'react';
-import { fetchUser, fetchUserRepos } from '../services/githubApi';
+import { fetchUser, fetchUserRepos } from '../services/githubAPI';
 import './UserSearch.css';
 
 function UserSearch() {
@@ -9,7 +9,7 @@ function UserSearch() {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-
+   
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!username.trim()) return;
